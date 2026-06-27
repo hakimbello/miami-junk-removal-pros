@@ -165,7 +165,7 @@
                   </div>
                   <div class="hero-cta">
                     <a class="btn btn-primary track-call" href="tel:+13059285773">📞 Call (305) 928-5773</a>
-                    <a class="btn btn-secondary" href="sms:+13059285773">💬 Text for a Same-Day Quote</a>
+                    <a class="btn btn-secondary" href="sms:+13059285773?body=Hi, I need a junk removal quote in Miami. Here is what I need removed:">💬 Text for a Same-Day Quote</a>
                   </div>
                   <p class="urgency">⚡ We respond in under 10 minutes</p>
                 </div>
@@ -194,7 +194,43 @@
               <article class="card"><h3>🧱 Construction Debris</h3><p>Post-renovation cleanup for contractors and homeowners. We clear the site so you can move on to the next job.</p></article>
             </div></div></section>
             <section class="section section-light"><div class="container"><h2>Transparent Pricing — No Surprises</h2><p class="pricing">Final price depends on volume and access. Text a photo for an exact same-day quote.</p><div class="pricing-table-wrap"><table class="pricing-table"><thead><tr><th>Service Type</th><th>Price</th></tr></thead><tbody><tr><td>Single item (couch, mattress, appliance)</td><td>$99 – $150</td></tr><tr><td>Small load (¼ truck)</td><td>$150 – $250</td></tr><tr><td>Medium load (½ truck)</td><td>$250 – $400</td></tr><tr><td>Full truck load</td><td>$400 – $600</td></tr><tr><td>Estate / full property cleanout</td><td>$500 – $1,500+</td></tr><tr><td>Airbnb turnover service</td><td>From $75</td></tr></tbody></table></div><div class="pricing-cards"><article class="pricing-card"><span class="label">Single item (couch, mattress, appliance)</span><span class="value">$99 – $150</span></article><article class="pricing-card"><span class="label">Small load (¼ truck)</span><span class="value">$150 – $250</span></article><article class="pricing-card"><span class="label">Medium load (½ truck)</span><span class="value">$250 – $400</span></article><article class="pricing-card"><span class="label">Full truck load</span><span class="value">$400 – $600</span></article><article class="pricing-card"><span class="label">Estate / full property cleanout</span><span class="value">$500 – $1,500+</span></article><article class="pricing-card"><span class="label">Airbnb turnover service</span><span class="value">From $75</span></article></div><p><strong>💬 Not sure what your job costs? Text us a photo at (305) 928-5773 and we'll give you a quote in minutes.</strong></p></div></section>
-            <section class="section section-white quote-section"><div class="container"><div class="quote-wrap"><h2>Get a Free Quote — We Respond in 10 Minutes</h2><form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="quote-request" /><p hidden><input name="bot-field" /></p><div class="quote-form"><input type="text" name="name" required placeholder="Your name"><input type="tel" name="phone" required placeholder="(305) 000-0000"><select name="service-needed"><option>Junk Removal</option><option>Furniture Removal</option><option>Appliance Removal</option><option>Estate Cleanout</option><option>Airbnb Turnover</option><option>Mattress Removal</option><option>Construction Debris</option><option>Other</option></select><input type="text" name="zip-code" required placeholder="Miami zip code"><button type="submit">Get My Free Quote →</button></div></form><p class="quote-note">Or text us directly: (305) 928-5773 | Available 7AM–7PM, 7 days a week</p></div></div></section>
+            <section class="section section-white quote-section"><div class="container"><div class="quote-wrap"><h2>Get a Free Quote — We Respond in 10 Minutes</h2><form class="quote-form" action="https://formspree.io/f/YOURFORMID" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="First and last name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(305) 000-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Service Address or City</label>
+                <input type="text" id="address" name="address" placeholder="e.g. Miami Beach, Hialeah, Coral Gables" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="Junk Removal">Junk Removal</option>
+                  <option value="Furniture Removal">Furniture Removal</option>
+                  <option value="Appliance Removal">Appliance Removal</option>
+                  <option value="Estate Cleanout">Estate Cleanout</option>
+                  <option value="Airbnb Turnover">Airbnb Turnover Cleaning</option>
+                  <option value="Mattress Removal">Mattress Removal</option>
+                  <option value="Construction Debris">Construction Debris Removal</option>
+                  <option value="Hoarding Cleanout">Hoarding Cleanout</option>
+                  <option value="Move Out Cleaning">Move Out Cleaning</option>
+                  <option value="Commercial Junk Removal">Commercial Junk Removal</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Describe what needs to be removed (optional)</label>
+                <textarea id="message" name="message" placeholder="e.g. Old couch, mattress, and 3 bags of junk in a 2nd floor apartment" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Get My Free Quote →</button>
+              <p class="form-note">Or text us directly: <a href="sms:+13059285773?body=Hi, I need a junk removal quote in Miami. Here is what I need removed:">📱 (305) 928-5773</a> | Available 7AM–7PM, 7 days a week</p>
+            </form></div></div></section>
             <section class="section section-light"><div class="container"><h2>What Our Customers Say</h2><div class="review-grid"><article class="review-card"><div class="review-stars">★★★★★</div><p>"Called at 9am, they showed up by noon. Cleared my whole garage in under 2 hours. Professional, fast, and fairly priced. Will use again."</p><p class="review-name">— Maria R., Hialeah, FL</p></article><article class="review-card"><div class="review-stars">★★★★★</div><p>"Best price I found in all of Miami. No hidden fees, showed up on time, and left the place clean. Highly recommend Miami Junk Removal Pros."</p><p class="review-name">— James T., Miami Beach, FL</p></article><article class="review-card"><div class="review-stars">★★★★★</div><p>"They handled my mother's estate cleanout with care and respect. Cleared a 3-bedroom house in one day. Couldn't have asked for better service."</p><p class="review-name">— Denise M., Coral Gables, FL</p></article></div><p class="reviews-cta"><strong>⭐ <a href="https://www.google.com/search?q=Miami+Junk+Removal+Pros+reviews" target="_blank" rel="noopener noreferrer">Read our reviews on Google</a></strong></p></div></section>
             <section class="section"><div class="container prose">
 <p>Miami junk removal searches come from people who need reliable help right now — in Wynwood, Brickell, Little Havana, Hialeah, Miami Beach, and everywhere in between. Miami Junk Removal Pros was built for that urgency with same-day response, straightforward communication, and results that respect your property and timeline.</p>
@@ -270,7 +306,7 @@
               <p><a href="tel:+13059285773">(305) 928-5773</a> | 7AM–7PM Daily</p>
             </div>
           </footer>
-          <div class="mobile-cta"><a class="track-call" href="tel:+13059285773">📞 Call Now</a><a href="sms:+13059285773">💬 Text for Quote</a></div>
+          <div class="mobile-cta"><a class="track-call" href="tel:+13059285773">📞 Call Now</a><a href="sms:+13059285773?body=Hi, I need a junk removal quote in Miami. Here is what I need removed:">💬 Text for Quote</a></div>
           <script src="/js/main.js"></script>
         </body>
         </html>
