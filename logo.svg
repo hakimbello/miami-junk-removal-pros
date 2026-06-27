@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Miami Junk Removal Pros Logo</title>
+  <desc id="logoDesc">Truck mark and wordmark for Miami Junk Removal Pros in sage green and warm charcoal.</desc>
+  <rect width="300" height="60" fill="#FAFAF9"/>
+  <g fill="#2F5D4E">
+    <rect x="8" y="24" width="22" height="12" rx="2"/>
+    <rect x="30" y="26" width="8" height="10" rx="2"/>
+    <circle cx="15" cy="40" r="4"/>
+    <circle cx="28" cy="40" r="4"/>
+  </g>
+  <text x="45" y="40" font-family="DM Sans, system-ui, sans-serif" font-size="20" font-weight="700" letter-spacing="0.15">
+    <tspan fill="#2F5D4E">Miami</tspan>
+    <tspan dx="5" fill="#1C1917">Junk</tspan>
+    <tspan dx="5" fill="#2F5D4E">Removal</tspan>
+    <tspan dx="5" fill="#1C1917">Pros</tspan>
+  </text>
+</svg>
