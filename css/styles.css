@@ -968,3 +968,475 @@ body:not(.home) h2 {
   border-left: 3px solid var(--accent);
   padding-left: 12px;
 }
+
+/* ============================================
+   INNER PAGE STYLES — Service & Location Pages
+   ============================================ */
+
+/* Hero for inner pages */
+.hero-inner {
+  background: var(--hero-deep);
+  color: #f5f5f4;
+  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.5rem, 6vw, 4rem);
+}
+
+.hero-inner .hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+  padding: 0.38rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(184, 149, 108, 0.35);
+  background: rgba(184, 149, 108, 0.12);
+  color: rgba(250, 250, 249, 0.9);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-inner h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.1rem;
+  color: #fafaf9;
+  border: none;
+  padding: 0;
+}
+
+.hero-inner .hero-sub {
+  max-width: 42rem;
+  color: rgba(245, 245, 244, 0.82);
+  font-size: 1.07rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.hero-inner .hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero-inner .btn-primary {
+  background: #fafaf9;
+  color: var(--hero-deep);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.9rem 1.35rem;
+  font-size: 0.98rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-inner .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+.hero-inner .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.9rem 1.35rem;
+  font-size: 0.98rem;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fafaf9;
+  background: rgba(255,255,255,0.06);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero-inner .btn-secondary:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+}
+
+.hero-inner .hero-note {
+  color: rgba(184, 149, 108, 0.95);
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Content sections for inner pages */
+.content-section {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  background: var(--surface);
+}
+
+.content-section:nth-child(even) {
+  background: var(--elevated);
+}
+
+.content-section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 2rem 0 1rem;
+  letter-spacing: -0.02em;
+  border-left: 3px solid var(--accent);
+  padding-left: 12px;
+}
+
+.content-section h2:first-child {
+  margin-top: 0;
+}
+
+.content-section p {
+  color: var(--ink-muted);
+  line-height: 1.75;
+  margin: 0 0 1.25rem;
+  max-width: 72ch;
+}
+
+.content-section ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  max-width: 72ch;
+}
+
+.content-section ul li {
+  color: var(--ink-muted);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.content-section ul li strong {
+  color: var(--ink);
+}
+
+.content-section a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.content-section a:hover {
+  color: var(--accent-hover);
+}
+
+/* Pricing table inside content sections */
+.content-section .pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.97rem;
+  margin: 1rem 0 1.5rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+
+.content-section .pricing-table th {
+  background: var(--ink);
+  color: #fafaf9;
+  text-align: left;
+  padding: 0.9rem 1.15rem;
+  font-weight: 600;
+}
+
+.content-section .pricing-table td {
+  padding: 0.85rem 1.15rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--elevated);
+  color: var(--ink-muted);
+}
+
+.content-section .pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.content-section .pricing-table tr:nth-child(even) td {
+  background: var(--surface);
+}
+
+/* FAQ section for inner pages */
+.faq-section {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  background: var(--surface-2);
+}
+
+.faq-section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.02em;
+  border-left: 3px solid var(--accent);
+  padding-left: 12px;
+}
+
+.faq-section details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  background: var(--elevated);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease;
+}
+
+.faq-section details:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.faq-section details[open] {
+  border-color: var(--accent);
+}
+
+.faq-section summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.4;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-section summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-weight: 300;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.faq-section details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-section details p {
+  margin: 0.85rem 0 0;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+/* CTA section for inner pages */
+.cta-section {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  background: var(--hero-deep);
+  color: #f5f5f4;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: #fafaf9;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+  border: none;
+  padding: 0;
+}
+
+.cta-section p {
+  color: rgba(245, 245, 244, 0.82);
+  font-size: 1.07rem;
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  line-height: 1.65;
+}
+
+.cta-section .cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.cta-section .btn-primary {
+  background: #fafaf9;
+  color: var(--hero-deep);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.98rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.cta-section .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.98rem;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fafaf9;
+  background: rgba(255,255,255,0.06);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cta-section .btn-secondary:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+}
+
+/* Footer layout */
+.footer-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-main {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.footer-brand p {
+  color: #a8a29e;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0.5rem 0 0;
+  max-width: 22rem;
+}
+
+.footer-contact p,
+.footer-services p,
+.footer-areas p {
+  margin: 0.35rem 0;
+  font-size: 0.92rem;
+  color: #a8a29e;
+}
+
+.footer-services ul,
+.footer-areas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.footer-services ul li,
+.footer-areas ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: #a8a29e;
+}
+
+.footer-services ul li a,
+.footer-areas ul li a {
+  color: #a8c5b8;
+  transition: color 0.2s ease;
+}
+
+.footer-services ul li a:hover,
+.footer-areas ul li a:hover {
+  color: #fafaf9;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.88rem;
+  color: #78716c;
+  padding-bottom: 2rem;
+}
+
+.footer-bottom p {
+  margin: 0.25rem 0;
+}
+
+.footer-bottom a {
+  color: #a8c5b8;
+}
+
+/* Form styles for inner page quote forms */
+.quote-form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 560px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font: inherit;
+  font-size: 0.97rem;
+  background: var(--surface);
+  color: var(--ink);
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  margin: 0.5rem 0 0;
+}
+
+.form-note a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Mobile responsive for inner pages */
+@media (max-width: 767px) {
+  .hero-inner h1 {
+    font-size: clamp(1.9rem, 8vw, 2.8rem);
+  }
+
+  .content-section .pricing-table {
+    font-size: 0.85rem;
+  }
+
+  .content-section .pricing-table th,
+  .content-section .pricing-table td {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .cta-section .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
