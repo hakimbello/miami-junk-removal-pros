@@ -19,7 +19,7 @@
   --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.06);
   --shadow-md: 0 12px 40px rgba(28, 25, 23, 0.08);
   --shadow-lg: 0 24px 64px rgba(28, 25, 23, 0.12);
-  --space-section: clamp(3rem, 8vw, 5.5rem);
+  --space-section: clamp(1.75rem, 4vw, 3rem);
   /* Legacy aliases for inner pages */
   --navy: var(--hero-deep);
   --coral: var(--accent);
@@ -226,7 +226,7 @@ a {
   display: grid;
   gap: clamp(2rem, 5vw, 3.5rem);
   align-items: center;
-  padding: clamp(2.75rem, 7vw, 5.25rem) 0 clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(1.75rem, 4vw, 3rem) 0 clamp(1.5rem, 3vw, 2.5rem);
 }
 
 @media (min-width: 900px) {
@@ -977,7 +977,7 @@ body:not(.home) h2 {
 .hero-inner {
   background: var(--hero-deep);
   color: #f5f5f4;
-  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(1.75rem, 4vw, 3rem) 0 clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .hero-inner .hero-label {
@@ -1067,7 +1067,7 @@ body:not(.home) h2 {
 
 /* Content sections for inner pages */
 .content-section {
-  padding: clamp(3rem, 7vw, 5rem) 0;
+  padding: clamp(1.75rem, 4vw, 3rem) 0;
   background: var(--surface);
 }
 
@@ -1161,7 +1161,7 @@ body:not(.home) h2 {
 
 /* FAQ section for inner pages */
 .faq-section {
-  padding: clamp(3rem, 7vw, 5rem) 0;
+  padding: clamp(1.75rem, 4vw, 3rem) 0;
   background: var(--surface-2);
 }
 
@@ -1229,7 +1229,7 @@ body:not(.home) h2 {
 
 /* CTA section for inner pages */
 .cta-section {
-  padding: clamp(3rem, 7vw, 5rem) 0;
+  padding: clamp(1.75rem, 4vw, 3rem) 0;
   background: var(--hero-deep);
   color: #f5f5f4;
   text-align: center;
