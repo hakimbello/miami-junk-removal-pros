@@ -1440,3 +1440,23 @@ body:not(.home) h2 {
     align-items: center;
   }
 }
+
+/* —— Black-owned Easter egg badge —— */
+.black-owned {
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    #cc0000 0%,
+    #cc0000 33%,
+    #111111 33%,
+    #111111 66%,
+    #009900 66%,
+    #009900 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-stroke: 0.3px rgba(255,255,255,0.4);
+  text-shadow: none;
+  display: inline;
+}
