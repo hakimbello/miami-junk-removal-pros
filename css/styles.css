@@ -1523,13 +1523,46 @@ body:not(.home) h2 {
 
 /* —— Spacing fixes —— */
 .footer-main {
-  gap: 1.5rem;
-  padding-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .footer-main {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+}
+
+.footer-brand strong {
+  font-size: 1rem;
+  color: #fafaf9;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact strong,
+.footer-services strong,
+.footer-areas strong {
+  font-size: 0.85rem;
+  color: #fafaf9;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .footer-bottom {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #78716c;
   padding-bottom: 1.25rem;
+  padding-top: 0.5rem;
 }
 
 .card-grid,
