@@ -88,7 +88,7 @@ a {
 }
 
 .logo-mark {
-  height: 44px;
+  height: 56px;
   width: auto;
   display: block;
 }
@@ -1313,10 +1313,10 @@ body:not(.home) h2 {
 
 .footer-brand p {
   color: #a8a29e;
-  font-size: 0.92rem;
-  line-height: 1.65;
-  margin: 0.5rem 0 0;
-  max-width: 22rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 0.4rem 0 0;
+  max-width: 18rem;
 }
 
 .footer-contact p,
@@ -1625,4 +1625,24 @@ body:not(.home) h2 {
 
 .pricing-table td {
   padding: 0.7rem 1rem;
+}
+
+/* Footer logo sizing */
+.footer-brand img {
+  height: 32px !important;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Tighten quote section heading */
+.quote-section h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  margin-bottom: 0.75rem;
+}
+
+/* Remove extra padding from quote wrap */
+.quote-section .quote-wrap {
+  padding: 1.25rem;
 }
