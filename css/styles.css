@@ -1835,3 +1835,14 @@ body:not(.home) h2 {
   border-color: var(--ink-muted);
   color: var(--ink);
 }
+
+/* Footer brand fix */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand strong {
+  display: none;
+}
