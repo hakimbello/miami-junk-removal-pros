@@ -88,11 +88,9 @@ a {
 }
 
 .logo-mark {
-  height: 40px;
+  height: 44px;
   width: auto;
   display: block;
-  shape-rendering: geometricPrecision;
-  text-rendering: geometricPrecision;
 }
 
 .logo-footer {
@@ -1443,9 +1441,9 @@ body:not(.home) h2 {
 
 /* —— Black-owned Easter egg badge —— */
 .black-owned {
-  font-weight: 700;
+  font-weight: 800;
   background: linear-gradient(
-    135deg,
+    90deg,
     #cc0000 0%,
     #cc0000 33%,
     #111111 33%,
@@ -1456,9 +1454,8 @@ body:not(.home) h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-text-stroke: 0.3px rgba(255,255,255,0.4);
-  text-shadow: none;
   display: inline;
+  padding: 0 2px;
 }
 
 /* —— About page stats —— */
@@ -1505,9 +1502,9 @@ body:not(.home) h2 {
 
 /* —— Haitian-American Easter egg badge —— */
 .haitian-owned {
-  font-weight: 700;
+  font-weight: 800;
   background: linear-gradient(
-    135deg,
+    90deg,
     #00209F 0%,
     #00209F 50%,
     #D21034 50%,
@@ -1516,9 +1513,8 @@ body:not(.home) h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-text-stroke: 0.4px rgba(255,255,255,0.6);
-  text-shadow: none;
   display: inline;
+  padding: 0 2px;
 }
 
 /* —— Spacing fixes —— */
@@ -1561,13 +1557,21 @@ body:not(.home) h2 {
   text-align: center;
   font-size: 0.82rem;
   color: #78716c;
-  padding-bottom: 1.25rem;
-  padding-top: 0.5rem;
+  padding: 0.75rem 0 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 0.5rem;
 }
 
 .card-grid,
 .feature-grid {
   gap: 0.75rem;
+}
+
+.card-grid .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
 }
 
 .card {
