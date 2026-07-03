@@ -2169,3 +2169,79 @@ body:not(.home) h2 {
 .zip-cta-btn:hover {
   transform: translateY(-1px);
 }
+
+/* ============================================
+   BOOKING PAGE STYLES
+   ============================================ */
+.booking-section {
+  background: var(--surface);
+}
+.booking-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .booking-wrap {
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2.5rem;
+  }
+}
+.booking-intro {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+.booking-note {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  margin-top: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+  background: var(--surface-2);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+}
+.booking-note a {
+  color: var(--accent);
+  font-weight: 600;
+}
+.booking-info-box {
+  background: var(--elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+.booking-info-box h3 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  color: var(--ink);
+}
+.booking-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.booking-checklist li {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+.booking-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.booking-steps li {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+.booking-steps li strong {
+  color: var(--accent);
+}
