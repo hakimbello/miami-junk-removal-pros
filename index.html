@@ -159,7 +159,11 @@
                     <a class="btn btn-secondary" href="sms:+13059285773?body=Hi, I need a junk removal quote in Miami. Here is what I need removed:">💬 Text for a Same-Day Quote</a>
                     <a href="/book" class="btn-secondary">📅 Book Online</a>
                   </div>
-                  <p class="urgency">⚡ We respond in under 10 minutes</p>
+                  <p class="hero-note">⚡ We respond in under 10 minutes</p>
+                  <div class="availability-indicator" id="availabilityIndicator">
+                    <span class="avail-dot" id="availDot"></span>
+                    <span class="avail-text" id="availText"></span>
+                  </div>
                 </div>
                 <aside class="hero-aside" aria-label="Contact">
                   <div class="hero-card">
@@ -531,6 +535,56 @@ function checkZip() {
 document.getElementById('zipInput').addEventListener('keydown', function(e) {
   if (e.key === 'Enter') checkZip();
 });
+</script>
+<script>
+(function() {
+  function getAvailability() {
+    const now = new Date();
+    const day = now.getDay(); // 0=Sun, 1=Mon ... 6=Sat
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const timeDecimal = hour + minute / 60;
+    const isOpen = timeDecimal >= 7 && timeDecimal < 19; // 7AM to 7PM
+    const isWeekend = day === 0 || day === 6;
+    const dot = document.getElementById('availDot');
+    const text = document.getElementById('availText');
+    if (!dot || !text) return;
+    if (isOpen) {
+      // Currently open — check how many hours left
+      const hoursLeft = Math.floor(19 - timeDecimal);
+      if (hour < 10) {
+        // Early morning — lots of slots
+        dot.className = 'avail-dot avail-green';
+        text.textContent = '🟢 Open now — Same-day slots available today';
+      } else if (hour < 14) {
+        // Midday
+        dot.className = 'avail-dot avail-green';
+        text.textContent = '🟢 Open now — Same-day slots still available';
+      } else if (hour < 17) {
+        // Afternoon — filling up
+        dot.className = 'avail-dot avail-yellow';
+        text.textContent = '🟡 Open now — Limited same-day slots remaining today';
+      } else {
+        // Late afternoon — almost done
+        dot.className = 'avail-dot avail-yellow';
+        text.textContent = '🟡 Open until 7PM — Text now for a slot today';
+      }
+    } else {
+      // Closed
+      if (hour >= 19) {
+        // After hours
+        dot.className = 'avail-dot avail-red';
+        text.textContent = '🔴 Closed for today — Text us now to book for tomorrow';
+      } else {
+        // Before 7AM
+        dot.className = 'avail-dot avail-red';
+        text.textContent = '🔴 Opens at 7AM — Text us now and we\'ll respond first thing';
+      }
+    }
+  }
+  getAvailability();
+  setInterval(getAvailability, 60000); // Update every minute
+})();
 </script>
         </body>
         </html>
