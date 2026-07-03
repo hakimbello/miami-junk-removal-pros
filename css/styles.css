@@ -1846,3 +1846,205 @@ body:not(.home) h2 {
 .footer-brand strong {
   display: none;
 }
+
+/* ============================================
+   PHOTO QUOTE PAGE STYLES
+   ============================================ */
+.quote-upload-section {
+  background: var(--surface);
+}
+.quote-upload-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .quote-upload-wrap {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+  }
+}
+.quote-upload-intro {
+  color: var(--ink-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.97rem;
+}
+.photo-quote-form {
+  display: grid;
+  gap: 1rem;
+}
+.photo-upload-area {
+  border: 2px dashed var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  background: var(--surface);
+  min-height: 120px;
+  position: relative;
+}
+.photo-upload-area:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.photo-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.photo-upload-placeholder {
+  text-align: center;
+  color: var(--ink-muted);
+  pointer-events: none;
+}
+.upload-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.upload-sub {
+  font-size: 0.82rem;
+  margin: 0.25rem 0 0;
+}
+.photo-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.preview-thumb {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.preview-thumb img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+}
+.preview-name {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  padding: 0.25rem 0.35rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.photo-tip {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin: 0.5rem 0 0;
+}
+.quote-submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.quote-submit-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+.quote-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+.quote-how-it-works {
+  background: var(--elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+.how-steps {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 1rem;
+}
+.how-steps li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+.how-steps li p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+.how-steps li strong {
+  color: var(--ink);
+  font-size: 0.97rem;
+}
+.quote-trust-box,
+.quote-price-box,
+.quote-contact-box {
+  background: var(--elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+.trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.trust-list li {
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+}
+.see-full-pricing {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.contact-btn {
+  display: block;
+  text-align: center;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+.contact-btn:hover {
+  transform: translateY(-1px);
+}
