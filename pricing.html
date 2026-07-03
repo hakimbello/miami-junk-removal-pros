@@ -219,6 +219,146 @@
                 <p>The most accurate way to price your job is to text us photos. Here's why: volume is the biggest pricing factor, and photos let us estimate volume accurately without coming out for a separate estimate visit.</p>
                 <p>Text 2–3 photos of your items from different angles to <a href="sms:+13059285773?body=Hi, I need a junk removal quote in Miami. Here is what I need removed:">(305) 928-5773</a>. We'll respond with a firm price range within 10 minutes. If you approve the range, we schedule your pickup — same day if slots are available.</p>
 
+<div class="calc-wrap">
+  <h2>Cubic Yard Calculator — What Load Size Do You Have?</h2>
+  <p class="calc-intro">Not sure how much truck space your junk will take up? Add your items below and we will calculate your estimated load size instantly.</p>
+  <div class="calc-layout">
+    <div class="calc-items-side">
+      <p class="calc-label">Select your items and quantities:</p>
+      <div class="calc-item-list">
+        <div class="calc-row">
+          <span class="calc-item-name">🛋️ Sofa / Sectional</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('sofa', -1)">−</button>
+            <span class="qty-val" id="qty-sofa">0</span>
+            <button class="qty-btn" onclick="adjustQty('sofa', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🛏️ Mattress (any size)</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('mattress', -1)">−</button>
+            <span class="qty-val" id="qty-mattress">0</span>
+            <button class="qty-btn" onclick="adjustQty('mattress', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🧊 Refrigerator</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('fridge', -1)">−</button>
+            <span class="qty-val" id="qty-fridge">0</span>
+            <button class="qty-btn" onclick="adjustQty('fridge', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🌀 Washer or Dryer</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('washer', -1)">−</button>
+            <span class="qty-val" id="qty-washer">0</span>
+            <button class="qty-btn" onclick="adjustQty('washer', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🔥 Stove / Oven</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('stove', -1)">−</button>
+            <span class="qty-val" id="qty-stove">0</span>
+            <button class="qty-btn" onclick="adjustQty('stove', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🗄️ Dresser / Wardrobe</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('dresser', -1)">−</button>
+            <span class="qty-val" id="qty-dresser">0</span>
+            <button class="qty-btn" onclick="adjustQty('dresser', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🛏️ Bed Frame</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('bedframe', -1)">−</button>
+            <span class="qty-val" id="qty-bedframe">0</span>
+            <button class="qty-btn" onclick="adjustQty('bedframe', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">📺 TV</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('tv', -1)">−</button>
+            <span class="qty-val" id="qty-tv">0</span>
+            <button class="qty-btn" onclick="adjustQty('tv', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🖥️ Office Desk</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('desk', -1)">−</button>
+            <span class="qty-val" id="qty-desk">0</span>
+            <button class="qty-btn" onclick="adjustQty('desk', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">📦 Bag / Box of Misc Junk</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('bag', -1)">−</button>
+            <span class="qty-val" id="qty-bag">0</span>
+            <button class="qty-btn" onclick="adjustQty('bag', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🪑 Chair / Recliner</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('chair', -1)">−</button>
+            <span class="qty-val" id="qty-chair">0</span>
+            <button class="qty-btn" onclick="adjustQty('chair', 1)">+</button>
+          </div>
+        </div>
+        <div class="calc-row">
+          <span class="calc-item-name">🍽️ Dining Table</span>
+          <div class="calc-qty">
+            <button class="qty-btn" onclick="adjustQty('table', -1)">−</button>
+            <span class="qty-val" id="qty-table">0</span>
+            <button class="qty-btn" onclick="adjustQty('table', 1)">+</button>
+          </div>
+        </div>
+      </div>
+      <button class="calc-reset-btn" onclick="resetCalc()">Reset All</button>
+    </div>
+    <div class="calc-result-side">
+      <div class="calc-result-box" id="calcResultBox">
+        <div class="calc-result-placeholder" id="calcPlaceholder">
+          <span style="font-size:2rem;">📦</span>
+          <p>Add items to see your load estimate</p>
+        </div>
+        <div class="calc-result-active" id="calcActive" style="display:none;">
+          <p class="calc-result-label">Estimated Load Size</p>
+          <p class="calc-result-size" id="calcSize">—</p>
+          <div class="calc-truck-visual">
+            <div class="truck-bar-wrap">
+              <div class="truck-bar" id="truckBar"></div>
+            </div>
+            <div class="truck-labels">
+              <span>Empty</span>
+              <span>¼</span>
+              <span>½</span>
+              <span>¾</span>
+              <span>Full</span>
+            </div>
+          </div>
+          <p class="calc-result-price-label">Estimated Price Range</p>
+          <p class="calc-result-price" id="calcPrice">—</p>
+          <p class="calc-result-note">This is an estimate. Text us photos for a firm quote before we start.</p>
+          <div class="calc-result-ctas">
+            <a href="/get-quote" class="btn-primary calc-cta-btn">📸 Upload Photos for Exact Quote</a>
+            <a href="sms:+13059285773?body=Hi, I used your calculator and need a firm quote. Here is what I have:" class="btn-secondary calc-cta-btn">💬 Text for Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
               </div>
             </section>
 
@@ -322,5 +462,67 @@
           </footer>
           <div class="mobile-cta"><a class="track-call" href="tel:+13059285773">📞 Call Now</a><a href="sms:+13059285773">💬 Text for Quote</a></div>
           <script src="/js/main.js"></script>
+<script>
+const ITEMS = {
+  sofa:    { cy: 2.5,  label: "Sofa/Sectional" },
+  mattress:{ cy: 1.5,  label: "Mattress" },
+  fridge:  { cy: 2.0,  label: "Refrigerator" },
+  washer:  { cy: 1.5,  label: "Washer/Dryer" },
+  stove:   { cy: 1.2,  label: "Stove/Oven" },
+  dresser: { cy: 1.8,  label: "Dresser/Wardrobe" },
+  bedframe:{ cy: 1.0,  label: "Bed Frame" },
+  tv:      { cy: 0.5,  label: "TV" },
+  desk:    { cy: 1.5,  label: "Office Desk" },
+  bag:     { cy: 0.3,  label: "Bag/Box" },
+  chair:   { cy: 0.8,  label: "Chair/Recliner" },
+  table:   { cy: 1.2,  label: "Dining Table" }
+};
+const qtys = {};
+Object.keys(ITEMS).forEach(k => qtys[k] = 0);
+function adjustQty(item, delta) {
+  qtys[item] = Math.max(0, qtys[item] + delta);
+  document.getElementById('qty-' + item).textContent = qtys[item];
+  updateCalc();
+}
+function resetCalc() {
+  Object.keys(qtys).forEach(k => {
+    qtys[k] = 0;
+    document.getElementById('qty-' + k).textContent = '0';
+  });
+  updateCalc();
+}
+function updateCalc() {
+  let total = 0;
+  Object.keys(ITEMS).forEach(k => {
+    total += ITEMS[k].cy * qtys[k];
+  });
+  const placeholder = document.getElementById('calcPlaceholder');
+  const active = document.getElementById('calcActive');
+  if (total === 0) {
+    placeholder.style.display = 'flex';
+    active.style.display = 'none';
+    return;
+  }
+  placeholder.style.display = 'none';
+  active.style.display = 'block';
+  const TRUCK_MAX = 10;
+  const pct = Math.min(total / TRUCK_MAX * 100, 100);
+  document.getElementById('truckBar').style.width = pct + '%';
+  let size, price;
+  if (total <= 1) {
+    size = 'Single Item'; price = '$125 – $150';
+  } else if (total <= 2.5) {
+    size = 'Small Load (¼ Truck)'; price = '$150 – $250';
+  } else if (total <= 5) {
+    size = 'Medium Load (½ Truck)'; price = '$250 – $400';
+  } else if (total <= 7.5) {
+    size = 'Large Load (¾ Truck)'; price = '$350 – $500';
+  } else {
+    size = 'Full Truck Load'; price = '$400 – $600';
+  }
+  document.getElementById('calcSize').textContent = size;
+  document.getElementById('calcPrice').textContent = price;
+}
+</script>
         </body>
         </html>

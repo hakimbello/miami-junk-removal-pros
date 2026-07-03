@@ -2245,3 +2245,205 @@ body:not(.home) h2 {
 .booking-steps li strong {
   color: var(--accent);
 }
+
+/* ============================================
+   CUBIC YARD CALCULATOR
+   ============================================ */
+.calc-wrap {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+.calc-intro {
+  color: var(--ink-muted);
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+.calc-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .calc-layout {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+  }
+}
+.calc-label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+.calc-item-list {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.calc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--elevated);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  transition: border-color 0.2s ease;
+}
+.calc-row:hover {
+  border-color: var(--accent);
+}
+.calc-item-name {
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.calc-qty {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  line-height: 1;
+}
+.qty-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.qty-val {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+.calc-reset-btn {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.18s ease;
+}
+.calc-reset-btn:hover {
+  border-color: var(--ink-muted);
+  color: var(--ink);
+}
+.calc-result-box {
+  background: var(--elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 90px;
+  min-height: 200px;
+}
+.calc-result-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--ink-muted);
+  padding: 2rem;
+  gap: 0.5rem;
+  min-height: 180px;
+}
+.calc-result-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin: 0 0 0.25rem;
+}
+.calc-result-size {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+.calc-truck-visual {
+  margin-bottom: 1rem;
+}
+.truck-bar-wrap {
+  height: 18px;
+  background: var(--surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  margin-bottom: 0.35rem;
+}
+.truck-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #4a8a6f);
+  border-radius: 999px;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+.truck-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+}
+.calc-result-price-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin: 0 0 0.25rem;
+}
+.calc-result-price {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
+}
+.calc-result-note {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.calc-result-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.calc-cta-btn {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  transition: transform 0.2s ease;
+}
+.calc-cta-btn:hover {
+  transform: translateY(-1px);
+}
