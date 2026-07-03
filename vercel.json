@@ -36,6 +36,9 @@
     { "source": "/pages/aventura.html", "destination": "/pages/aventura", "permanent": true },
     { "source": "/pages/hallandale-beach.html", "destination": "/pages/hallandale-beach", "permanent": true },
     { "source": "/pages/davie.html", "destination": "/pages/davie", "permanent": true },
-    { "source": "/pages/homestead.html", "destination": "/pages/homestead", "permanent": true }
+    { "source": "/pages/homestead.html", "destination": "/pages/homestead", "permanent": true },
+    { "source": "/pages/eliminacion-de-basura-miami.html", "destination": "/pages/eliminacion-de-basura-miami", "permanent": true },
+    { "source": "/pages/limpieza-airbnb-miami.html", "destination": "/pages/limpieza-airbnb-miami", "permanent": true },
+    { "source": "/pages/limpieza-de-herencia-miami.html", "destination": "/pages/limpieza-de-herencia-miami", "permanent": true }
   ]
 }
