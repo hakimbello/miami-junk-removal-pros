@@ -2048,3 +2048,124 @@ body:not(.home) h2 {
 .contact-btn:hover {
   transform: translateY(-1px);
 }
+
+/* ============================================
+   ZIP CODE CHECKER WIDGET
+   ============================================ */
+.zip-checker-wrap {
+  background: var(--elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.zip-checker-wrap h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+}
+.zip-intro {
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+  margin: 0 0 1rem;
+}
+.zip-input-row {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 380px;
+}
+.zip-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  font: inherit;
+  font-size: 1rem;
+  background: var(--surface);
+  color: var(--ink);
+  transition: border-color 0.2s ease;
+}
+.zip-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.zip-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 0.97rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+.zip-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+.zip-result {
+  margin-top: 1rem;
+}
+.zip-yes,
+.zip-no,
+.zip-error {
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+.zip-yes {
+  background: rgba(47, 93, 78, 0.08);
+  border: 1px solid rgba(47, 93, 78, 0.25);
+}
+.zip-no {
+  background: rgba(184, 149, 108, 0.08);
+  border: 1px solid rgba(184, 149, 108, 0.3);
+}
+.zip-error {
+  background: rgba(204, 0, 0, 0.06);
+  border: 1px solid rgba(204, 0, 0, 0.2);
+  color: #cc0000;
+  font-size: 0.9rem;
+}
+.zip-check {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.zip-yes strong,
+.zip-no strong {
+  display: block;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+  font-size: 0.97rem;
+}
+.zip-yes p,
+.zip-no p {
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+  margin: 0 0 0.75rem;
+}
+.zip-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.zip-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+.zip-cta-btn:hover {
+  transform: translateY(-1px);
+}

@@ -278,7 +278,17 @@
 <details><summary>Why choose Miami Junk Removal Pros?</summary><p>You get responsive communication, premium workmanship, and practical scheduling tailored to Miami-area properties.</p></details></div></div></section>
 
 <section class="section"><div class="container"><h2>Explore Services</h2><div class="card-grid"><a class="card card-link" href="/pages/airbnb-cleaning-miami.html"><h3>Airbnb Cleaning Miami</h3><p>Book Airbnb Cleaning Miami →</p></a><a class="card card-link" href="/pages/vacation-rental-cleaning-miami.html"><h3>Vacation Rental Cleaning Service Miami</h3><p>Book Vacation Rental Cleaning Miami →</p></a><a class="card card-link" href="/pages/airbnb-turnover-service-miami.html"><h3>Airbnb Turnover Service Miami</h3><p>Book Airbnb Turnover Service Miami →</p></a><a class="card card-link" href="/pages/short-term-rental-cleaning-miami.html"><h3>Short Term Rental Cleaning Service Miami</h3><p>Book Short Term Rental Cleaning Miami →</p></a><a class="card card-link" href="/pages/same-day-junk-removal-miami.html"><h3>Same Day Junk Removal Miami</h3><p>Book Same-Day Junk Removal Miami →</p></a><a class="card card-link" href="/pages/furniture-removal-miami.html"><h3>Furniture Removal Miami</h3><p>Book Furniture Removal Miami →</p></a><a class="card card-link" href="/pages/appliance-removal-miami.html"><h3>Appliance Removal Miami</h3><p>Book Appliance Removal Miami →</p></a><a class="card card-link" href="/pages/mattress-removal-miami.html"><h3>Mattress Removal Miami</h3><p>Book Mattress Removal Miami →</p></a><a class="card card-link" href="/pages/estate-cleanout-miami.html"><h3>Estate Cleanout Miami</h3><p>Book Estate Cleanout Miami →</p></a><a class="card card-link" href="/pages/hoarding-cleanout-miami.html"><h3>Hoarding Cleanout Miami</h3><p>Book Hoarding Cleanout Miami →</p></a><a class="card card-link" href="/pages/move-out-cleaning-miami.html"><h3>Move Out Cleaning Miami</h3><p>Book Move-Out Cleaning Miami →</p></a><a class="card card-link" href="/pages/construction-debris-removal-miami.html"><h3>Construction Debris Removal Miami</h3><p>Book Construction Debris Removal Miami →</p></a><a class="card card-link" href="/pages/commercial-junk-removal-miami.html"><h3>Commercial Junk Removal Miami</h3><p>Book Commercial Junk Removal Miami →</p></a><a class="card card-link" href="/pages/apartment-turnover-cleaning-miami.html"><h3>Apartment Turnover Cleaning Miami</h3><p>Book Apartment Turnover Cleaning Miami →</p></a></div></div></section>
-<section class="section section-light"><div class="container"><h2>Service Areas</h2><div class="card-grid"><a class="card card-link" href="/pages/junk-removal-miami-beach.html"><h3>Junk Removal Miami Beach</h3><p>Junk Removal Miami Beach →</p></a><a class="card card-link" href="/pages/junk-removal-hialeah.html"><h3>Junk Removal Hialeah</h3><p>Junk Removal Hialeah →</p></a><a class="card card-link" href="/pages/junk-removal-coral-gables.html"><h3>Junk Removal Coral Gables</h3><p>Junk Removal Coral Gables →</p></a><a class="card card-link" href="/pages/junk-removal-boca-raton.html"><h3>Junk Removal Boca Raton</h3><p>Junk Removal Boca Raton →</p></a><a class="card card-link" href="/pages/junk-removal-north-miami.html"><h3>Junk Removal North Miami</h3><p>Junk Removal North Miami →</p></a><a class="card card-link" href="/pages/airbnb-cleaning-miami-beach.html"><h3>Airbnb Cleaning Miami Beach</h3><p>Airbnb Cleaning Miami Beach →</p></a></div></div></section>
+<section class="section section-light"><div class="container"><h2>Service Areas</h2><div class="card-grid"><a class="card card-link" href="/pages/junk-removal-miami-beach.html"><h3>Junk Removal Miami Beach</h3><p>Junk Removal Miami Beach →</p></a><a class="card card-link" href="/pages/junk-removal-hialeah.html"><h3>Junk Removal Hialeah</h3><p>Junk Removal Hialeah →</p></a><a class="card card-link" href="/pages/junk-removal-coral-gables.html"><h3>Junk Removal Coral Gables</h3><p>Junk Removal Coral Gables →</p></a><a class="card card-link" href="/pages/junk-removal-boca-raton.html"><h3>Junk Removal Boca Raton</h3><p>Junk Removal Boca Raton →</p></a><a class="card card-link" href="/pages/junk-removal-north-miami.html"><h3>Junk Removal North Miami</h3><p>Junk Removal North Miami →</p></a><a class="card card-link" href="/pages/airbnb-cleaning-miami-beach.html"><h3>Airbnb Cleaning Miami Beach</h3><p>Airbnb Cleaning Miami Beach →</p></a></div>
+<div class="zip-checker-wrap">
+  <h3>Check If We Serve Your Area</h3>
+  <p class="zip-intro">Enter your ZIP code to instantly see if we cover your neighborhood.</p>
+  <div class="zip-input-row">
+    <input type="text" id="zipInput" class="zip-input" placeholder="Enter ZIP code (e.g. 33101)" maxlength="5" inputmode="numeric" pattern="[0-9]*">
+    <button class="zip-btn" id="zipBtn" onclick="checkZip()">Check →</button>
+  </div>
+  <div class="zip-result" id="zipResult"></div>
+</div>
+</div></section>
           </main>
           <footer>
             <div class="footer-main">
@@ -404,6 +414,121 @@
     updateEstimate();
   });
 })();
+</script>
+<script>
+const SERVED_ZIPS = {
+  // Miami
+  "33101":"Miami","33102":"Miami","33107":"Miami","33110":"Miami","33111":"Miami",
+  "33112":"Miami","33114":"Miami","33116":"Miami","33119":"Miami","33121":"Miami",
+  "33122":"Miami","33124":"Miami","33125":"Miami","33126":"Miami","33127":"Miami",
+  "33128":"Miami","33129":"Miami","33130":"Miami","33131":"Miami","33132":"Miami",
+  "33133":"Miami","33134":"Miami","33135":"Miami","33136":"Miami","33137":"Miami",
+  "33138":"Miami","33139":"Miami","33140":"Miami","33141":"Miami","33142":"Miami",
+  "33143":"Miami","33144":"Miami","33145":"Miami","33146":"Miami","33147":"Miami",
+  "33148":"Miami","33149":"Miami","33150":"Miami","33151":"Miami","33152":"Miami",
+  "33153":"Miami","33154":"Miami","33155":"Miami","33156":"Miami","33157":"Miami",
+  "33158":"Miami","33159":"Miami","33160":"Miami","33161":"Miami","33162":"Miami",
+  "33163":"Miami","33164":"Miami","33165":"Miami","33166":"Miami","33167":"Miami",
+  "33168":"Miami","33169":"Miami","33170":"Miami","33172":"Miami","33173":"Miami",
+  "33174":"Miami","33175":"Miami","33176":"Miami","33177":"Miami","33178":"Miami",
+  "33179":"Miami","33180":"Miami","33181":"Miami","33182":"Miami","33183":"Miami",
+  "33184":"Miami","33185":"Miami","33186":"Miami","33187":"Miami","33188":"Miami",
+  "33189":"Miami","33190":"Miami","33193":"Miami","33194":"Miami","33196":"Miami",
+  // Miami Beach
+  "33109":"Miami Beach","33119":"Miami Beach","33139":"South Beach","33140":"Miami Beach",
+  "33141":"Miami Beach",
+  // Hialeah
+  "33010":"Hialeah","33011":"Hialeah","33012":"Hialeah","33013":"Hialeah",
+  "33014":"Hialeah","33015":"Hialeah","33016":"Hialeah","33018":"Hialeah",
+  // Coral Gables
+  "33114":"Coral Gables","33124":"Coral Gables","33134":"Coral Gables","33146":"Coral Gables",
+  // North Miami
+  "33161":"North Miami","33162":"North Miami Beach","33169":"North Miami",
+  "33179":"North Miami Beach","33180":"Aventura",
+  // Kendall
+  "33176":"Kendall","33183":"Kendall","33186":"Kendall","33187":"Kendall",
+  "33193":"Kendall","33196":"Kendall",
+  // Doral
+  "33122":"Doral","33166":"Doral","33178":"Doral",
+  // Homestead / South Miami-Dade
+  "33030":"Homestead","33031":"Homestead","33032":"Homestead","33033":"Homestead",
+  "33034":"Florida City","33035":"Homestead","33039":"Homestead",
+  "33157":"Palmetto Bay","33158":"Palmetto Bay","33170":"Cutler Bay",
+  "33189":"Cutler Bay","33190":"Cutler Bay",
+  // Aventura / Sunny Isles
+  "33160":"Sunny Isles Beach","33180":"Aventura","33181":"Aventura",
+  // Boca Raton
+  "33427":"Boca Raton","33428":"Boca Raton","33429":"Boca Raton",
+  "33431":"Boca Raton","33432":"Boca Raton","33433":"Boca Raton",
+  "33434":"Boca Raton","33486":"Boca Raton","33487":"Boca Raton",
+  "33496":"Boca Raton","33498":"Boca Raton",
+  // Broward County
+  // Miramar
+  "33023":"Miramar","33025":"Miramar","33027":"Miramar","33029":"Miramar",
+  // Pembroke Pines
+  "33024":"Pembroke Pines","33026":"Pembroke Pines","33028":"Pembroke Pines",
+  "33082":"Pembroke Pines","33084":"Pembroke Pines",
+  // Hollywood
+  "33019":"Hollywood","33020":"Hollywood","33021":"Hollywood",
+  "33022":"Hollywood","33083":"Hollywood",
+  // Fort Lauderdale
+  "33301":"Fort Lauderdale","33304":"Fort Lauderdale","33305":"Fort Lauderdale",
+  "33306":"Fort Lauderdale","33308":"Fort Lauderdale","33309":"Fort Lauderdale",
+  "33310":"Fort Lauderdale","33311":"Fort Lauderdale","33312":"Fort Lauderdale",
+  "33314":"Fort Lauderdale","33315":"Fort Lauderdale","33316":"Fort Lauderdale",
+  "33317":"Fort Lauderdale","33319":"Fort Lauderdale","33334":"Fort Lauderdale",
+  // Hallandale Beach
+  "33009":"Hallandale Beach",
+  // Davie
+  "33314":"Davie","33317":"Davie","33324":"Davie","33325":"Davie",
+  "33328":"Davie","33330":"Davie","33331":"Davie",
+  // Aventura area Broward
+  "33069":"Pompano Beach","33060":"Pompano Beach","33062":"Pompano Beach",
+  "33063":"Margate","33064":"Pompano Beach","33065":"Coral Springs",
+  "33066":"Pompano Beach","33067":"Coral Springs","33068":"Margate",
+  "33071":"Coral Springs","33073":"Coconut Creek","33076":"Parkland",
+  "33321":"Tamarac","33322":"Plantation","33323":"Plantation",
+  "33324":"Plantation","33326":"Weston","33327":"Weston","33328":"Davie",
+  "33330":"Davie","33331":"Weston","33332":"Weston","33388":"Plantation"
+};
+function checkZip() {
+  const input = document.getElementById('zipInput');
+  const result = document.getElementById('zipResult');
+  const zip = input.value.trim();
+  if (zip.length !== 5 || !/^\d{5}$/.test(zip)) {
+    result.innerHTML = '<div class="zip-error">⚠️ Please enter a valid 5-digit ZIP code.</div>';
+    return;
+  }
+  if (SERVED_ZIPS[zip]) {
+    const city = SERVED_ZIPS[zip];
+    result.innerHTML = '<div class="zip-yes">' +
+      '<span class="zip-check">✅</span>' +
+      '<div>' +
+      '<strong>Yes! We serve ' + zip + ' (' + city + ')</strong>' +
+      '<p>Same-day junk removal available in your area. Text us a photo for a firm quote in under 10 minutes.</p>' +
+      '<div class="zip-ctas">' +
+      '<a href="sms:+13059285773?body=Hi, I need junk removal in ' + city + ' (ZIP ' + zip + '). Here is what I need removed:" class="btn-primary zip-cta-btn">💬 Text for a Quote</a>' +
+      '<a href="tel:+13059285773" class="btn-secondary zip-cta-btn">📞 Call (305) 928-5773</a>' +
+      '</div>' +
+      '</div>' +
+      '</div>';
+  } else {
+    result.innerHTML = '<div class="zip-no">' +
+      '<span class="zip-check">📍</span>' +
+      '<div>' +
+      '<strong>We may still be able to help</strong>' +
+      '<p>ZIP code ' + zip + ' is outside our standard service area but we occasionally travel further for larger jobs. Call or text us and we will let you know if we can make it work.</p>' +
+      '<div class="zip-ctas">' +
+      '<a href="sms:+13059285773?body=Hi, I am in ZIP code ' + zip + ' and need junk removal. Can you help?" class="btn-primary zip-cta-btn">💬 Text to Ask</a>' +
+      '<a href="tel:+13059285773" class="btn-secondary zip-cta-btn">📞 Call (305) 928-5773</a>' +
+      '</div>' +
+      '</div>' +
+      '</div>';
+  }
+}
+document.getElementById('zipInput').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') checkZip();
+});
 </script>
         </body>
         </html>
