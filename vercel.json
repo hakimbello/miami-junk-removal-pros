@@ -7,6 +7,8 @@
     { "source": "/pricing.html", "destination": "/pricing", "permanent": true },
     { "source": "/get-quote.html", "destination": "/get-quote", "permanent": true },
     { "source": "/book.html", "destination": "/book", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
     { "source": "/pages/same-day-junk-removal-miami.html", "destination": "/pages/same-day-junk-removal-miami", "permanent": true },
     { "source": "/pages/furniture-removal-miami.html", "destination": "/pages/furniture-removal-miami", "permanent": true },
     { "source": "/pages/appliance-removal-miami.html", "destination": "/pages/appliance-removal-miami", "permanent": true },
