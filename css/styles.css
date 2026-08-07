@@ -1442,14 +1442,8 @@ body:not(.home) h2 {
 
 /* —— Black-owned Easter egg badge —— */
 .black-owned {
-  background: linear-gradient(135deg, #006600, #FFD700, #FF0000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #FFFFFF;
   font-weight: 700;
-  text-shadow: 0 0 8px rgba(255,255,255,0.3);
-  display: inline;
-  padding: 0 2px;
 }
 
 /* —— About page stats —— */
@@ -1496,14 +1490,8 @@ body:not(.home) h2 {
 
 /* —— Haitian-American Easter egg badge —— */
 .haitian-owned {
-  background: linear-gradient(135deg, #00209F, #000000, #D21034);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #FFFFFF;
   font-weight: 700;
-  text-shadow: 0 0 8px rgba(255,255,255,0.3);
-  display: inline;
-  padding: 0 2px;
 }
 
 /* —— Spacing fixes —— */
