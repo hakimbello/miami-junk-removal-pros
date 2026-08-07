@@ -1442,7 +1442,7 @@ body:not(.home) h2 {
 
 /* —— Black-owned Easter egg badge —— */
 .black-owned {
-  color: #FFFFFF;
+  color: #FF6B35;
   font-weight: 700;
 }
 
@@ -1490,7 +1490,7 @@ body:not(.home) h2 {
 
 /* —— Haitian-American Easter egg badge —— */
 .haitian-owned {
-  color: #FFFFFF;
+  color: #FF6B35;
   font-weight: 700;
 }
 
