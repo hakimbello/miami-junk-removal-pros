@@ -2468,3 +2468,116 @@ body:not(.home) h2 {
   color: rgba(250, 250, 249, 0.92);
   letter-spacing: 0.01em;
 }
+
+/* —— Real Jobs gallery —— */
+.real-jobs .before-after {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.real-jobs .job-shot {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--elevated);
+  box-shadow: var(--shadow-sm);
+}
+
+.real-jobs .job-shot img,
+.real-jobs .job-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.real-jobs .job-badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 1;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+}
+
+.real-jobs .job-badge-before {
+  background: #0f1c2e;
+}
+
+.real-jobs .job-badge-after {
+  background: #ff6b35;
+}
+
+.real-jobs .job-caption {
+  margin: 0.85rem 0 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--ink-muted);
+  font-size: 0.98rem;
+}
+
+.real-jobs .job-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.real-jobs .job-thumb {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--elevated);
+  box-shadow: var(--shadow-sm);
+}
+
+.real-jobs .job-thumb figcaption {
+  padding: 0.75rem 0.9rem 0.95rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.real-jobs-cta {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.real-jobs-cta p {
+  margin: 0 0 1rem;
+  color: var(--ink-muted);
+}
+
+.btn-coral {
+  background: #ff6b35;
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(255, 107, 53, 0.28);
+}
+
+.btn-coral:hover {
+  background: #e85a28;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.35);
+}
+
+@media (min-width: 768px) {
+  .real-jobs .before-after {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .real-jobs .job-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
